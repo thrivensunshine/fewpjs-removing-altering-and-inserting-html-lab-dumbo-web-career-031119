@@ -1,12 +1,11 @@
-// Write your code here!
-var element = document.createElement('div');
-document.body.appendChild(element);
-var ul = document.createElement('ul');
 
-for( let i = 0; i < 3; i++){
-  let li = document.createElement('li')
-  li.innerHTML = ( i + 1).toString()
-  ul.appendChild(li)
-}
+const testVar = "hi"
 
-element.appendChild(ul)
+/* Enter the code to remove the node element here */
+document.querySelector("main#main").remove();
+
+/* Create your new element here and assign it to newHeader */
+const newHeader = document.createElement("h1");
+newHeader.id = "victory"
+newHeader.innerHTML = "Flatiron School is the champion!";
+newHeader.className = "victory";
